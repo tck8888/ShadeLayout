@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.wejiji.shadelayout.ShadeLayout
+    android:id="@+id/rootview"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+<RelativeLayout
+android:padding="10dp"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="vertical">
+
+<ImageView
+    android:id="@+id/image_iv"
+    android:layout_width="80dp"
+    android:layout_height="80dp"
+    tools:src="@mipmap/ic_launcher"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentStart="true"/>
+
+<TextView
+    android:layout_alignTop="@id/image_iv"
+    android:textSize="18sp"
+    android:id="@+id/username_tv"
+    android:layout_marginLeft="10dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_toRightOf="@id/image_iv"
+    tools:text="用户名"/>
+
+<TextView
+    android:layout_alignBottom="@id/image_iv"
+    android:textSize="18sp"
+    android:id="@+id/description_tv"
+    android:layout_marginLeft="10dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_toRightOf="@id/image_iv"
+    tools:text="描述"/>
+    </RelativeLayout>
+</com.wejiji.shadelayout.ShadeLayout>
